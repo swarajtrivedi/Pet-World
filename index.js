@@ -4,6 +4,6 @@ function toDog(){ //function to view dog image
 function toCat(){ //function to view cat image
     document.getElementById("btnimg").src="Assets/cat.jpg";
 }
-function toPrt(){ //funciton to view Parrot image
+function toPrt(){ //function to view Parrot image
     document.getElementById("btnimg").src="Assets/parrot.jpg";
 }
