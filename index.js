@@ -1,9 +1,9 @@
 function toDog(){ //function to view dog image 
-    document.getElementById("btnimg").src="dog.jpg";
+    document.getElementById("btnimg").src="Assets/dog.jpg";
 }
 function toCat(){ //function to view cat image
-    document.getElementById("btnimg").src="cat.jpg";
+    document.getElementById("btnimg").src="Assets/cat.jpg";
 }
 function toPrt(){ //funciton to view Parrot image
-    document.getElementById("btnimg").src="parrot.jpg";
+    document.getElementById("btnimg").src="Assets/parrot.jpg";
 }
