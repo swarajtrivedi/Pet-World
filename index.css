@@ -1,17 +1,9 @@
-:root {
-  --clr-neon: rgba(236, 230, 235, 0.973);
-  --clr-bg: rgb(9, 17, 13);
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 body {
   min-height: 40vh;
-  background: var(--clr-bg);
+  background: greenyellow;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: var(--clr-neon);
+  color: black;
   padding-right: 10rem;
 }
 .heading {
@@ -21,20 +13,13 @@ body {
 }
 .flex-container {
   display: flex;
+  padding-left: 80px;
 }
 
 .flex-child {
   flex: 1;
 }
-.btn-1{
-    padding-left: 6rem;
-}
-.btn-2{
-    padding-left: 6.25rem;
-}
-.btn-3{
-    padding-left: 5.25rem;
-}
+
 .flex-child:first-child {
   margin-right: 20px;
   margin-left: 200px;
@@ -42,95 +27,32 @@ body {
   margin-top: 50px;
 }
 
-.nbutton {
-  font-size: 2rem;
-  cursor: pointer;
-  text-decoration: none;
-  color: rgb(8, 8, 6);
-  border: var(--clr-neon) 0.125em solid;
-  padding: 0.25em 1em;
-  border-radius: 0.25em;
-  text-shadow: 0 0 0.125em rgba(19, 16, 16, 0.3), 0 0 0.45em currentColor;
-  box-shadow: inset 0 0 0.95em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
-  position: relative;
+button{
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  
 }
 
-.nbutton::before {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  background: var(--clr-neon);
-  top: 120%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
-  filter: blur(1em);
-  opacity: 0.7;
-}
-
-.nbutton::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 2em 0.5em var(--clr-neon);
-  opacity: 0;
-  background-color: var(--clr-neon);
-  z-index: -1;
-  transition: opacity 100ms linear;
-}
-
-.nbutton:hover,
-.nbutton:focus {
-  color: var(--clr-bg);
-  text-shadow: none;
-}
-
-.nbutton:hover::before,
-.nbutton:focus::before {
-  opacity: 1;
-}
-.nbutton:hover::after,
-.nbutton:focus::after {
-  opacity: 1;
+.bn{
+  background-color: yellow;
+  box-shadow: 0px 0px 30px rgb(17, 14, 14);
 }
 
 img {
-  border: 5px solid rgb(228, 230, 224);
-  box-shadow: 0px 0px 30px white;
+  border: 5px solid rgb(18, 26, 18);
+  box-shadow: 0px 0px 30px rgb(17, 14, 14);
   height: 400px;
   width: 400px;
 }
 h1 {
   font-size: 4rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:cursive;
   justify-content: center;
   text-align: center;
-  color: #fff;
-  animation: flicker 1.5s infinite alternate;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(166, 89, 238),
-    0 0 82px rgb(206, 61, 250), 0 0 92px rgb(239, 80, 245), 0 0 102px rgb(174, 92, 241), 0 0 151px rgb(197, 73, 247);
-
+  color: rgb(27, 11, 11);
+  text-shadow: 3px 3px 10px grey;
+  
 }
 
-@keyframes flicker {
-  0%,
-  18%,
-  22%,
-  25%,
-  53%,
-  57%,
-  100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px rgb(180, 46, 221),
-      0 0 80px rgb(197, 76, 245), 0 0 90px rgb(223, 71, 243), 0 0 100px rgb(222, 78, 241), 0 0 150px rgb(240, 81, 240);
-  }
 
-  20%,
-  24%,
-  55% {
-    text-shadow: none;
-  }
-}
